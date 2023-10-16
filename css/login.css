@@ -1,0 +1,211 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NotoSans_Thin';
+    src: url(../fonts/NotoSans-Thin.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Light';
+    src: url(../fonts/NotoSans-Light.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Medium';
+    src: url(../fonts/NotoSans-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Regular';
+    src: url(../fonts/NotoSans-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Bold';
+    src: url(../fonts/NotoSans-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: 'GeneralSans_Light';
+    src: url(../fonts/GeneralSans-Light.woff) format("woff");
+}
+
+
+/* loginArea */
+.loginArea {
+    display: flex;
+}
+/* -signUp */
+.signUp {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    position: relative;
+}
+.signUp .bgWrap {
+    position: relative;
+}
+.signUp .bgWrap img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.signUp .bgWrap:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+}
+.signUp .textArea {
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    z-index: 1;
+}
+.signUp .textArea .signUp-title {
+    font-family: 'NotoSans_Light', sans-serif;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: -4.05px
+}
+.signUp .textArea .sub-title {
+    margin-top: 10px;
+    font-family: 'NotoSans_Medium', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: -.25px;
+}
+.signUp .textArea .signUp-link {
+    display: inline-block;
+    margin-top: 60px;
+    padding-right: 15px;
+    background: url(../img/icon-login-signup.svg) no-repeat right/12px;
+}
+.signUp .textArea .signUp-link a {
+    display: block;
+    font-family: 'NotoSans_Bold', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -.25px;
+}
+/* //-signUp */
+
+/* -signIn */
+.signIn {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.signIn-Area .signIn-title {
+    font-family: 'NotoSans_Light', sans-serif;
+    font-size: 54px;
+    letter-spacing: -3.5px;
+    text-align: center;
+}
+.signIn-Area .signIn-subtitle {
+    font-family: 'NotoSans_Regular', sans-serif;
+    font-size: 14px;
+    color: rgba(0 , 0 , 0 , .6);
+    text-align: center;
+}
+.signIn-Area .inputArea {
+    width: 480px;
+    margin: 60px auto 0 auto;
+}
+.inputArea .Input-wrap {
+    position: relative;
+    width: 480px;
+    background: #fff;
+    padding-right: 35px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: border .3s ease;
+}
+.Input-wrap {
+    border: 1px solid rgba(0, 0, 0, .16);
+}
+.inputArea .btnDelete {
+    position: absolute;
+    right: 5%;
+    top: 50%; transform: translateY(-50%);
+    display: none;
+    width: 24px; height: 24px;
+    background: url(../img/btn-input-delete.svg) no-repeat center/cover;
+}
+.signIn-Area input {
+    width: 100%; height: 60px;
+    padding: 3px 20px 3px 54px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: 'NotoSans_Regular', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+.login-wrap:before {
+    display: inline-block;
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+    content: '';
+    width: 24px; height: 24px;
+    background: url(../img/icon-login-id.png) no-repeat center/cover;
+}
+.pwd-wrap:before {
+    display: inline-block;
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+    content: '';
+    width: 24px; height: 24px;
+    background: url(../img/icon-login-password.png) no-repeat center/cover;
+}
+.pwd-wrap {
+    margin-top: 20px;
+}
+.loginBtn {
+    width: 100%; height: 65px;
+    margin-top: 40px;
+    padding: 20px 10px;
+    border-radius: 30px;
+    background: #111;
+    font-family: 'NotoSans_Bold', sans-serif;
+    color: #fff;
+    font-size: 19px;
+}
+.kakaoLogin {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.kakaoLogin img {
+    max-width: 100%;
+}
+.findArea {
+    margin-top: 30px;
+    text-align: center;
+}
+.findArea a {
+    display: inline-block;
+    font-family: 'NotoSans_Medium', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .6);
+    letter-spacing: -.3px;
+}
+.findArea .findId {
+    position: relative;
+}
+.findArea .findId:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 1px; height: 14px;
+    background: #e3e1de;
+    margin-left: 20px;
+}
+.findArea .findPwd {
+    margin-left: 35px;
+}
+.focus {
+    border: 1px solid rgba(0, 0, 0, .7);
+}

@@ -1,0 +1,165 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NotoSans_Thin';
+    src: url(../fonts/NotoSans-Thin.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Light';
+    src: url(../fonts/NotoSans-Light.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Medium';
+    src: url(../fonts/NotoSans-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Regular';
+    src: url(../fonts/NotoSans-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: 'NotoSans_Bold';
+    src: url(../fonts/NotoSans-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: 'GeneralSans_Light';
+    src: url(../fonts/GeneralSans-Light.woff) format("woff");
+}
+@font-face {
+    font-family: 'GeneralSans_Medium';
+    src: url(../fonts/GeneralSans-Medium.woff) format("woff");
+}
+
+
+/* contWrap */
+/* -contTitleArea */
+.contTitleArea {
+    padding: 60px 0 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.contTitleArea .contTitle {
+    font-family: 'NotoSans_Light', sans-serif;
+    color: #000;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: -4px;
+}
+/* -subTitleArea */
+.subTitleArea {
+    overflow: hidden;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    width: 100%; height: 510px;
+}
+.subTitleArea .bg {
+    background: url(../img/magazine-bg.png) no-repeat center/cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    filter: blur(25px);
+    z-index: -1;
+}
+.subTitleArea .subTitle-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px; height: 100%;
+    margin: 0 auto; padding: 0 120px;
+    box-sizing: border-box;
+}
+.subTitleArea .subTitle-cont .subTitle-txt h2 {
+    font-family: 'NotoSans_Bold', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    line-height: 44px;
+}
+.subTitleArea .subTitle-cont .subTitle-txt p {
+    margin-top: 16px;
+    font-family: 'NotoSans_Light', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, .9);
+    line-height: 32px;
+}
+.subTitleArea .subTitle-cont .subTitle-imgA {
+    width: 377px; height: 100%;
+    margin-left: 20px;
+}
+.subTitleArea .subTitle-cont .subTitle-imgA img {
+    max-width: 100%;
+}
+/* -contA */
+.contWrap .contA {
+    width: 100%;
+    background: #fdfaf7;
+    padding: 50px 0 200px;
+    box-sizing: border-box;
+}
+.contWrap .contA .contA-listA {
+    width: 1160px;
+    margin: 0 auto;
+}
+.contWrap .contA .contA-listA .list-title {
+    font-family: 'NotoSans_Regular', sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .5);
+    line-height: 19px;
+    letter-spacing: -.325px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+.contWrap .contA .contA-listA .list-title span {
+    font-family: 'NotoSans_Medium', sans-serif;
+    color: rgba(0, 0, 0, .9);
+    margin-left: 2px;
+}
+.contWrap .contA .contA-listA .contA-listW {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard {
+    display: block;
+    width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+    cursor: pointer;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard:nth-child(4n) {
+    margin-right: 0;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard:nth-child(n+5) {
+    margin-top: 64px;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-imgW {
+    overflow: hidden;
+    height: 366px;
+    border-radius: 4px;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-imgW img {
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-imgW:hover img {
+    transform: scale(1.1);
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-txt {
+    margin-top: 16px;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-txt .card-title {
+    font-family: 'NotoSans_Bold', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 6px;
+}
+.contWrap .contA .contA-listA .contA-listW .listCard .card-txt .card-subtitle{
+    font-family: 'NotoSans_Regular', sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .5);
+    line-height: 19px;
+    letter-spacing: -.325px;
+}
+.on {display: block;}
+.opacity {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
