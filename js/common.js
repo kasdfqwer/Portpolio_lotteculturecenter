@@ -43,7 +43,7 @@ $(function() {
         })
     })
 
-    /* 메 */
+    /* 메인메뉴 */
     let lastScrollTop = 0;
     const delta = 15;
   

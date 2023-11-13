@@ -62,12 +62,12 @@ window.Kakao.init("e4308e1d0e274f1b882fab2e5f95a599");
       window.Kakao.Auth.loginForm ({
           scope: 'profile_nickname, profile_image, account_email, gender',
           success: function(authObj) {
-              console.log(authObj)
+              //console.log(authObj)
               window.kakao.API.request({
                   url: '/v2/user/me',
                   success: res => {
                       const kakao_account = res.kakao_account;
-                      console.log(kakao_account)
+                      //console.log(kakao_account)
                   }
               })
           }

@@ -4,16 +4,16 @@ window.addEventListener('scroll', () => {
         contAI = document.querySelector('.contA').offsetHeight
         wrapI = document.querySelector('#wrap').offsetHeight
     i = window.scrollY; /* 윈도우 스크롤 양 */ 
-    console.log(i)
-    console.log(contAI)
-    console.log(wrapI)
-    console.log(wrapI - contAI)
+    //console.log(i)
+    //console.log(contAI)
+    //console.log(wrapI)
+    //console.log(wrapI - contAI)
     if ( i > 0) {
       btnTop.style.display = 'block'
-      if ( i > wrapI - contAI - 100) {
-        btnTop.style.bottom = (i - (wrapI - contAI)) + 260 + 'px'
+      if ( i + 300 > wrapI - contAI) {
+        btnTop.style.bottom = (i - (wrapI - contAI)) + 360 + 'px'
       } else {
-        btnTop.style.bottom = 80 + 'px'
+        btnTop.style.bottom = '40px'
       }
     } else if ( i <= 0) {
       btnTop.style.display = 'none'

@@ -3,14 +3,14 @@ window.addEventListener('scroll', () => {
     let btnTop = document.querySelector('.btnTop'), /* button : btnTop */
         contATop = document.querySelector('.tab-mapArea').offsetTop
     i = window.scrollY; /* 윈도우 스크롤 양 */ 
-    console.log(i)
-    console.log(contATop)
+    //console.log(i)
+    //console.log(contATop)
     if ( i > 0) {
       btnTop.style.display = 'block'
-      if ( i  > contATop - 140) {
-        btnTop.style.bottom = i - contATop + 200 + 'px'
+      if ( i + 300  > contATop) {
+        btnTop.style.bottom = i - contATop + 320 + 'px'
       } else {
-        btnTop.style.bottom = 60 + 'px'
+        btnTop.style.bottom = '40px'
       }
     } else if ( i <= 0) {
       btnTop.style.display = 'none'

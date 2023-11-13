@@ -81,7 +81,7 @@ var Eventswiper = new Swiper(".eventSlide", {
 
 $(function() {
   $('.swiperbtn').on('click', function() {
-    console.log('asdf')
+    //console.log('asdf')
     if ($(this).hasClass('pause') == true) {
       Eventswiper.autoplay.stop();
       $(this).removeClass('pause').addClass('play')
@@ -105,13 +105,13 @@ window.addEventListener('scroll', () => {
       /* btnTop */
       let btnTop = document.querySelector('.btnTop') /* button : btnTop */
 
-      let newsAreaBottom = document.querySelector('.newsContents').offsetTop - 320
+      let newsAreaBottom = document.querySelector('.newsContents').offsetTop - 600
       //console.log(newsAreaBottom)
       //console.log(i)
       if ( i > 0) {
         btnTop.style.display = 'block'
         if ( i > newsAreaBottom) {
-          btnTop.style.bottom = i - newsAreaBottom + 100  + 'px'
+          btnTop.style.bottom = i - newsAreaBottom + 'px'
         } else if ( i < newsAreaBottom) {
           btnTop.style.bottom = '40px'
         }
